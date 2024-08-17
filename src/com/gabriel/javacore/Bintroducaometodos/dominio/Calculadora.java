@@ -22,4 +22,12 @@ public class Calculadora {
         return 10 * 10;
     }
 
+    public void passagemPorValor(int operando1, int operando2) {
+
+        // São variáveis locais, "existem" apenas neste escopo do método
+
+        operando1 = 50; // atribui a variável local
+        operando2 = 100;
+    }
+
 }
