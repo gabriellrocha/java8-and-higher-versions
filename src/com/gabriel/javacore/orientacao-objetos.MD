@@ -33,6 +33,15 @@
             <li>Objetos software: Componentes de um programa, como classes e instâncias, que encapsulam dados e comportamentos específicos.</li>
         </ul>
     </ul>
+    <hr>
+    <h2>Métodos</h2>
+    <ul>
+        <li>Métodos de Instância: Associados a objetos. Eles operam sobre os dados (atributos) específicos de uma instância.(da qual está sendo chamado).</li>
+        <li>Métodos de Classe (ou Métodos Estáticos): São associados à classe em si. Não dependem de dados de instâncias específicas. Operam em<br>
+            dados compartilhados entre todas as instâncias (atributos da classe) ou realizam operações que não dependem dos dados de instâncias específicas.</li>
+        <li>Parâmetros: São as variáveis definidas na assinatura do método.
+        <li>Argumentos: São os valores que você passa para essas variáveis quando chama o método.</li>
+    </ul>
     <h2>Coesão</h2>
     <ul>
         <li class="def"><h4> Refere-se ao grau que os elementos de uma classe (ou modulo) estão relacionados entre si</h4></li>
