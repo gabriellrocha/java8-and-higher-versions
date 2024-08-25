@@ -1,0 +1,15 @@
+Associação
+
+Refere-se a um relacionamento entre duas ou mais classes em orientação a objetos, onde uma classe usa ou
+se relaciona com outra. (Define como as classes interagem entre elas nas aplicações)
+
+UNIDIRECIONAL - Apenas um lado conhece o relacionamento
+BIDIRECIONAL - Ambas partes conhecem o relacionamento
+
+
+Multiplicidade - Define o número de instâncias de uma classe que podem estar associadas a uma instância de outra classe
+
+1..1 (UM para UM) - UMA Pessoa TEM UMA HABILITAÇÃO
+1..N (UM para MUITOS) - UM time POSSUI vários jogadores
+N..1 (MUITOS para UM) - Vários jogadores joga em apenas UM TIME
+N..N (MUITOS para MUITOS)- Vários estudantes cursam Vários CURSOS
