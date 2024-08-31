@@ -2,8 +2,8 @@ package com.gabriel.javacore.Hheranca.dominio;
 
 public class Pessoa {
 
-    private String nome;
-    private Integer idade;
+    protected String nome;
+    protected Integer idade;
 
     public String getNome() {
         return nome;
