@@ -4,6 +4,10 @@ public class Funcionario extends Pessoa {
 
     private Double salario;
 
+    public Funcionario(String nome, Integer idade) {
+        super(nome, idade);
+    }
+
     public Double getSalario() {
         return salario;
     }

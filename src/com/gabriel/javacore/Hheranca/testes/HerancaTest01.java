@@ -10,7 +10,7 @@ public class HerancaTest01 {
         // Cuidado com o uso excessivo por conta do forte acoplamento
         // Palavra reservada 'super' faz acesso a um membro da classe pai
 
-        Funcionario funcionario = new Funcionario(); // Funcionário extends Pessoa
+        Funcionario funcionario = new Funcionario("Gabriel", 25); // Funcionário extends Pessoa
 
         funcionario.setNome("Gabriel");
         funcionario.setSalario(8000.0);
