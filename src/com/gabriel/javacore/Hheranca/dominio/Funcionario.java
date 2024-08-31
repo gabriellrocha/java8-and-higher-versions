@@ -11,4 +11,10 @@ public class Funcionario extends Pessoa {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println(salario);
+    }
 }
