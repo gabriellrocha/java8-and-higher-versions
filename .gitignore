@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 java8-and-higher-versions.iml
 .idea/
+.idea/misc.xml
 
 ### Eclipse ###
 .apt_generated

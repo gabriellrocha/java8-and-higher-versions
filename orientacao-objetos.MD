@@ -1,30 +1,17 @@
 <html lang="PT-BR">
-<head>
-    <title></title>
-    <style>
-        #enfase {
-            color: green;
-        }
-        .def {
-            color: #00BFFF;
-            list-style-type: none;
-        }
-    </style>
-</head>
-
 <body style="font-size: 16px">
     <h1>Orientação Objetos</h1>
+    <p>O paradigma de orientação a objetos é um modelo de programação que organiza o software em torno de "objetos", que são instâncias de classes. </p>
     <hr>
     <h2>Classe</h2>
     <ul>
-        <li class="def"><h4>Modelo que define a estrutura e o comportamento de objetos</h4></li>
+        <li><h4>Modelo que define a estrutura e o comportamento de objetos</h4></li>
     </ul>
     <hr>
     <h2>Objeto</h2>
     <ul>
-        <li class="def"><h4>É uma instância da classe. Representa uma unidade concreta com atributos (dados)
-         e métodos (comportamentos) definidos pela classe
-        </h4></li>
+        <li><h4>É uma instância da classe. Representa uma unidade concreta com atributos (dados)
+         e métodos (comportamentos) definidos pela classe </h4></li>
         <ul>
             <h5>Podem ser classificados em várias "categorias", por exemplo:</h5>
             <li>Objetos físicos: Representações digitais de entidades físicas, como impressoras, veículos ou sensores.</li>
@@ -43,17 +30,32 @@
     </ul>
     <h4>Sobrecarga</h4>
     <ul>
-        <li class="def"><h4>Permite definir múltiplos métodos com o mesmo nome em uma classe, desde que tenham assinaturas diferentes.</h4></li>
-        <li><span id="enfase">Vantagens:</span> Permite que métodos com a mesma intenção sejam utilizados em contextos diferentes</li>
+        <li><h4>Permite definir múltiplos métodos com o mesmo nome em uma classe, desde que tenham assinaturas diferentes.</h4></li>
+        <li>Vantagens: Permite que métodos com a mesma intenção sejam utilizados em contextos diferentes</li>
+    </ul>
+    <h4>Sobrescrita</h4>
+    <ul>
+        <li><h4>É quando uma classe filha modifica o comportamento de um método que ela herdou de sua classe pai.</h4></li>
+        <li>Vantagens: Permite adaptar o comportamento de métodos herdados para necessidades específicas da classe filha.</li>
+    </ul>
+        <h4>Palavra reservada 'super'</h4>
+        <li>Usado dentro de uma subclasse para acessar métodos e atributos da sua classe pai.</li>
+        <li>Utilidades: Chamar o construtor da classe pai para inicializar a parte da classe pai antes de adicionar funcionalidades específicas da subclasse.</li>
+    <ul>
+    </ul>
+        <h4>Palavra reservada 'this'</h4>
+        <li>É usado dentro de uma classe para referir-se ao objeto atual.</li>
+        <li>Utilidades: Diferenciar variáveis de instância de parâmetros, Chamar outro construtor da mesma classe this()</li>
+    <ul>
     </ul>
     <h4>Construtores</h4>
     <ul>
-        <li class="def"><h4>Métodos especiais de uma classe usados para inicializar novos objetos</h4></li>
+        <li><h4>Métodos especiais de uma classe usados para inicializar novos objetos</h4></li>
     </ul>
     <hr>
     <h2>Modificadores de acesso</h2>
     <ul>
-        <li class="def"><h4>Definem a visibilidade / acesso de classes, métodos e atributos</h4>
+        <li ><h4>Definem a visibilidade/acesso de classes, métodos e atributos</h4>
         <li>public: Acessível de qualquer lugar.</li>
         <li>protected: Acessível dentro do mesmo pacote e por subclasses em pacotes diferentes.</li>
         <li>default: (sem modificador): Acessível apenas dentro do mesmo pacote.</li>
@@ -79,7 +81,7 @@
         <li>Escrever getters e setters sempre no final da classe</li>
         <li>Em métodos realizar primeiros as validações, e em seguida, executar a lógica principal. "fail fast"</li>
         <ul>
-            <li style="list-style-type: none"><h3>Convenção nomenclatura </h3></li>
+            <li><h3>Convenção nomenclatura </h3></li>
             <li>camelCase: métodos, variáveis, atributos, parâmetros</li>
             <li>PascalCase: Classes, Interfaces, Enums</li>
             <li>Constantes | Valores dos enums: UPPER_CASE_WITH_UNDERSCORES</li>
