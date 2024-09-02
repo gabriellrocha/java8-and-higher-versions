@@ -8,7 +8,19 @@ public enum TipoCliente {
     // Implicitamente tem um construtor sem argumentos
 
     // Sõa implicitamente final e static
-    PESSOA_FISICA,
-    PESSOA_JURIDICA;
+    PESSOA_FISICA(1),
+    PESSOA_JURIDICA(2);
 
+    private final int tipoInt;
+
+
+    // Posso usar construtor para associar valores adicionais a cada constante
+    // O construtor É SEMPRE CHAMADO IMPLICITAMENTE
+    private TipoCliente(int tipoInt) {
+        this.tipoInt = tipoInt;
+    }
+
+    public int getTipoInt(){
+        return tipoInt;
+    }
 }

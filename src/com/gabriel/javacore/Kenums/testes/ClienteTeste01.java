@@ -10,8 +10,13 @@ public class ClienteTeste01 {
         Cliente cliente = new Cliente("Gabriel", TipoCliente.PESSOA_FISICA);
         Cliente cliente2 = new Cliente("Gabriel", TipoCliente.PESSOA_JURIDICA);
 
+        Cliente cliente3 = new Cliente("Maria",TipoCliente.PESSOA_FISICA);
+
         System.out.println(cliente);
         System.out.println(cliente2);
+
+        System.out.println(cliente3);
+        System.out.println(cliente3.getTipoCliente().getTipoInt());
 
 
     }
