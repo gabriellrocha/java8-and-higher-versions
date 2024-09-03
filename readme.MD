@@ -33,9 +33,24 @@
         <li><h4>Permite definir múltiplos métodos com o mesmo nome em uma classe, desde que tenham assinaturas diferentes.</h4></li>
         <li>Vantagens: Permite que métodos com a mesma intenção sejam utilizados em contextos diferentes</li>
     </ul>
+    <h4>Sobrescrita</h4>
+    <ul>
+        <li><h4>É quando uma classe filha modifica o comportamento de um método que ela herdou de sua classe pai.</h4></li>
+        <li>Vantagens: Permite adaptar o comportamento de métodos herdados para necessidades específicas da classe filha.</li>
+    </ul>
     <h4>Construtores</h4>
     <ul>
         <li><h4>Métodos especiais de uma classe usados para inicializar novos objetos</h4></li>
+    </ul>
+    <h4>Palavra reservada 'super'</h4>
+    <ul>
+        <li>Usado dentro de uma subclasse para acessar métodos e atributos da sua classe pai.</li>
+        <li>Utilidades: Chamar o construtor da classe pai para inicializar a parte da classe pai antes de adicionar funcionalidades específicas da subclasse.</li>
+    </ul>
+    <h4>Palavra reservada 'this'</h4>
+    <ul>
+        <li>É usado dentro de uma classe para referir-se ao objeto atual.</li>
+        <li>Utilidades: Diferenciar variáveis de instância de parâmetros, Chamar outro construtor da mesma classe this()</li>
     </ul>
     <hr>
     <h2>Modificadores de acesso</h2>
@@ -46,6 +61,32 @@
         <li>default: (sem modificador): Acessível apenas dentro do mesmo pacote.</li>
         <li>private: Acessível apenas dentro da própria classe.</li>
     </ul>
+    <p>Ao sobrescrever um método a visibilidade NÃO PODE SER MAIS RESTRITIVA. Por exemplo, um método protected
+    na classe pai não pode ser sobrescrito como private na classe filha</p>
+    <p>Ordem de restrição, do mais restrito ao mais aberto: private > default > protected > public </p>
+    <hr>
+    <h2>Design de Código</h2>
+    <p>Refere-se à organização e estruturação do código-fonte para ser claro, eficiente, fácil de entender, manter e estender. Envolve a aplicação de princípios e padrões de design que promovem modularidade, reutilização e qualidade do software.</p>
+    <hr>
+    <h2>Interfaces x Classes Abstratas</h2>
+    <ul>
+        <li>
+            <p>Herança</p>
+            <p>Interface | Uma classe pode implementar várias interfaces - herança múltipla</p>
+            <p>Classe Abstrata | Uma classe só pode herdar de uma única classe abstrata - herança simples</p>
+        </li>
+        <li>
+            <p>Métodos</p>
+            <p>Interface | Pode ter métodos abstratos, métodos 'default' e 'static' (a partir do java 8)</p>
+            <p>Classe Abstrata | Pode ter métodos abstratos e métodos concretos</p>
+        </li>
+        <li>
+            <p>Atributos</p>
+            <p>Interface | Só pode ter constantes (public static final) </p>
+            <p>Classe Abstrata | Podem ter variáveis de instância e constantes</p>
+        </li>
+    </ul>
+    <hr>
     <h2>Coesão</h2>
     <ul>
         <li><h4> Refere-se ao grau que os elementos de uma classe (ou modulo) estão relacionados entre si</h4></li>
