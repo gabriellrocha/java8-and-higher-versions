@@ -15,6 +15,8 @@ public class DataLoaderTest01 {
         FileLoader fl = new FileLoader();
         fl.load();
 
+        // Método default sobrescrito
+        dbl.checkPermission();
 
     }
 }

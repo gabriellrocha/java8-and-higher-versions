@@ -5,4 +5,9 @@ public class DataBaseLoader implements DataLoader {
     public void load() {
         System.out.println("loading from database...");
     }
+
+    @Override
+    public void checkPermission() {
+        System.out.println("checando permissões para database...");;
+    }
 }
