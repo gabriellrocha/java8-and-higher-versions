@@ -2,6 +2,8 @@ package com.gabriel.javacore.Minterfaces.dominio;
 
 public interface DataLoader {
 
+    public static final String TEXTO = "Eu sou uma constante";
+
     // Interfaces são um CONTRATO que definem um conjunto de métodos que uma classe DEVE implementar
     // Permitem a definição de COMPORTAMENTOS COMUNS para diferentes classes SEM IMPOR uma implementação específica
 
@@ -15,6 +17,10 @@ public interface DataLoader {
 
     default void checkPermission(){
         System.out.println("checando permissões.....");
+    }
+
+    public static void imprimir(){
+        System.out.println("Método static. Não posso ser sobrescrito");
     }
 
 }
