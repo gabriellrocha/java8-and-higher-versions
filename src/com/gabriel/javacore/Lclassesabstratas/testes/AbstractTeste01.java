@@ -11,6 +11,8 @@ public class AbstractTeste01 {
         Gerente gerente = new Gerente("Gabriel", new BigDecimal(8000), Departamento.TECNOLOGIA);
 
         System.out.println(gerente);
+        gerente.incrementarBonus();
+        System.out.println("Novo salário após Bonus 10% R$" +gerente.getSalario());
 
     }
 }

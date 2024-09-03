@@ -13,6 +13,11 @@ public class Gerente extends Funcionario {
         this.departamento = departamento;
     }
 
+    @Override
+    public void incrementarBonus() {
+        salario = salario.add(salario.multiply(new BigDecimal("0.1")));
+    }
+
     public Departamento getDepartamento() {
         return departamento;
     }

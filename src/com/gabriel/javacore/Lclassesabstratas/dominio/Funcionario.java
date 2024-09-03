@@ -20,6 +20,10 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
+    // Uma classe 'concreta' não pode conter método abstrato, do contrário será uma classe abstrata
+    // Promovem o uso de polimorfismo
+    public abstract void incrementarBonus();
+
     public String getNome() {
         return nome;
     }
