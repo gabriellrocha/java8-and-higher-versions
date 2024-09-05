@@ -1,6 +1,6 @@
 package com.gabriel.javacore.Npolimorfismo.dominio;
 
-public abstract class Produto {
+public abstract class Produto{
 
     protected String nome;
     protected Double preco;

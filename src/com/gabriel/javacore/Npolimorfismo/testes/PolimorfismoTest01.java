@@ -8,7 +8,12 @@ import com.gabriel.javacore.Npolimorfismo.service.CalculadoraImposto;
 public class PolimorfismoTest01 {
     public static void main(String[] args) {
 
-        // Polimorfismo - Neste caso a variável 'produto' pode assumir diferentes tipos
+        // É a capacidade de um objeto ter vários tipos dependendo do contexto
+        // A variável pode ser de tipo diferente em contextos diferentes
+        // variável 'produto' pode assumir diferentes tipos (geladeira, computador) ou seja, tudo que herda da Classe produto
+
+        // Polimorfismo = múltiplas formas
+
 
         Produto produto;
 
