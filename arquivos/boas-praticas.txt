@@ -1,0 +1,15 @@
+Algumas boas práticas de como lidar com exceções
+
+ - Usando try-catch em métodos privados
+     Encapsulamento do tratamento - Quando um método é privado, ele não é acessível diretamente de fora da classe.
+     Portanto, faz sentido encapsular o tratamento de exceções dentro desse método, usando `try-catch`.
+
+ - Usando `throw Exception` em métodos públicos
+     Ao lançar uma exceção, os métodos públicos permitem que chamadores (outros métodos) tratem os erros de maneira
+     que façam sentidos para eles, sem ímpor um tratamento específico. Pode ser útil em APIs ou bibliotecas, onde
+     diferentes chamadores podem ter diferentes necessidades de tratamento de erros.
+
+Lançamento de exceções específicas
+
+    Em vez de lançar exceções genéricas 'Exception', é uma boa prática lançar exceções específicas que descrevem
+    claramente o problema
